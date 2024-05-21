@@ -1,6 +1,6 @@
 streamlit
 seaborn
 pandas
-io
+io==3.3
 
 ploty
