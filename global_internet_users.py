@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import io
 
-df = pd.read_csv('global_internet_users/global_internet_users.csv')
+df = pd.read_csv('global_internet_users.csv')
 
 world_df = df[df['Code'].str.contains('OWID_WRL')].copy()
 world_df = world_df.drop([world_df.columns[0], world_df.columns[1], world_df.columns[2]], axis='columns')
